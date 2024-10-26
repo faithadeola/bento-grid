@@ -93,10 +93,11 @@ body {
 }
 
 .schedule-post>h1, .schedule-post>p{
-    width: 80%
+    width: 20%
 }
 .schedule-post>h1{
-    font-size: 2rem;
+    font-size: 20%;
+    text-align: center;
 }
 .schedule-post>p{
     font-size: 1rem;
@@ -128,6 +129,7 @@ body {
     width: 80%;
 }
 .faster-word>h1{
+    font-size:300%;
     margin: 0;
     margin-top: 20px
 }
@@ -137,24 +139,23 @@ body {
     grid-row: 5 / 8;
 }
 .maintain-post{
-    height: 100%;
+    height: 80%;
 }
 
 .maintain-post >h1{
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
-    margin-top: 1rem;
-    height: 60%;
+    margin-top: 1rem
 }
 .maintain-post >img{
-    height: auto;
-    object-fit: contain;
+    height: 80%;
+    width: 90%;
 }
 .grow-faster{
     background-color: #7551d9;
     grid-column: 3 / 5;
-    grid-row: 8 / 11;
-    width:100%;
+    grid-row: 8 / 12;
+    width: 100%;
 }
 .grow-followers{
     grid-template-columns: 1fr 1fr;
@@ -163,12 +164,14 @@ body {
     margin: 0.5rem;
     display: grid;
     color: white;
-    place-items: center;
 }
 .grow-followers >img{
     width:50%;
     height: auto;
     object-fit: cover;
+}
+.grow-followers>h1>span{
+    color: white;
 }
 .write-post{
     width: 80%;
@@ -179,28 +182,28 @@ body {
     object-fit: contain;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, auto);
-        width: 100%;
-        height: auto;
-        gap: 20px;
+        grid-template-rows: repeat(8, 0);
+        width: 50%;
+        height: 100;
+        gap: 1rem;
         margin-top: 20px;
     }
 
     .item {
-        width: 90%;
-        margin: 0 auto;
+        width: 80%;
+        margin: 10px;
     }
 
     .create-content, .write-ai, .social-ai, .manage-platforms, .maintain-schedule, .schedule-social, .grow-faster, .faster-growth{
-        grid-column: auto;
+        grid-column: 1/5;
         grid-row: auto;
     }
 
     .social-media >h1, .schedule-post>h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .create-post >h1, .write-post >h1, .manage-account >h1, .maintain-post >h1, .faster-word>h1, .schedule-post >h1, .grow-followers >h1{
@@ -238,6 +241,5 @@ body {
     }
     .faster-audience,.maintain-post,.create-post,.write-post{
         margin-left: 1.5rem;
-    }
-    
+    }    
 }
