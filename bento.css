@@ -3,8 +3,7 @@
 }
 body {
     font-family: 'DMSans', sans-serif;
-    font-weight: 200;
-    font-style: normal;
+    font-weight: 400;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -18,10 +17,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    width: 70vw;
-    height: 90vh;
+    /*width: 70vw;*/
+    height: 100vh;
     gap: 20px; 
-    align-self: center;    
+    align-self: center;   
+    padding: 4rem 20rem; 
 }
 
 .item {
@@ -31,13 +31,18 @@ body {
     place-items: center;
     overflow: hidden;
     padding: 20px;
+    font-size: 18px;
 }
 .create-content{
     background-color: rgb(255, 165, 0, 0.2);
     grid-column: 1 / 2;
     grid-row: 1 / 6;
     width: 90%;
-    font-weight: 300;
+    font-weight: 400;
+}
+.create-content h1{
+    font-size: 36px;
+    font-weight: 500;
 }
 .content{
     display: grid;
@@ -56,12 +61,17 @@ body {
     grid-row: 6 / 11;
     overflow: hidden;
 }
-
 .write-post >h1{
-    font-size: 39px; 
-    font-style: normal;
+    font-size: 2.2rem; 
+    font-weight: 400;
     align-items: start;
     margin: auto;
+}
+.write-post img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    max-height: 200px;
 }
 .social-ai{
     grid-column: 2 / 4;
@@ -76,8 +86,8 @@ body {
     color:rgb(255, 191, 0);
 }
 .social-media >h1{
-    text-wrap: wrap;
-    font-size: 2.9rem;
+    font-size: 3.5rem;
+    font-weight: 400;
     text-align: center;
     margin: 0;
 }
@@ -94,48 +104,73 @@ body {
     grid-column: 4 / 5;
     grid-row: 1 / 8;
     background-color: #e0d6f3;
+    padding: 0px;
+    place-items: normal start;
+}
+.schedule-media{
+    place-items: initial;
+    padding-left: 1rem;
+}
+.schedule-media h1{
+    font-size: 1.8rem;
+    font-weight: 350;
+    text-align: left;
+    width: 60%;
+    margin-top: 3rem;
+    line-height: 24px;
 }
 .schedule-media>p{
-    font-size: 20px;
-}
-.schedule-post>h1{
-    font-size: 20%;
-    text-align: center;
-}
-.schedule-post>p{
     font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+    width: 60%;
 }
-.schedule-post>img{
-    height: 20px;
+.schedule-media>img{
+    height: 300px;
 }
 .manage-platforms{
     grid-column: 2 / 3;
     grid-row: 5 / 8;
-    background-color: white
+    background-color: white;
 }  
+.manage-account{
+    place-items: initial;
+}
 .manage-account >h1{
-    width: 80%;
-    font-size: 1.5rem;
+    width: 70%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 1rem;
+}
+.manage-platforms img{
+    width: 300px;
 }
 .faster-growth{
     grid-column: 2 / 3;
     grid-row: 8 / 11;
     background-color: white;
 }
-
-.faster-audience >img{
+.faster-word img{
     height: 100%;
-    object-fit: contain;
-}
-.faster-word{
-    height: 100%;
-    width: 80%;
+    width: 100%;
 }
 .faster-word>h1{
-    font-size:300%;
+    font-size: 3.2rem;
     font-weight: 500;
+    width: 90px;
     margin: 0;
-    margin-top: 20px
+}
+.faster-word >h1>span{
+    font-size: 2.5rem;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+}
+.faster-word p{
+    font-size: 1rem;
+    width: 120%;
+    margin-bottom: 2rem;
 }
 .maintain-schedule{
     background-color: #fecb69;
@@ -144,32 +179,52 @@ body {
 }
 
 .maintain-post >h1{
-    width: 100%;
+    width: 90%;
     font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0;
+    line-height: 24px;
 }
 .maintain-post >img{
     width: 90%;
+    height: 100%;
+}
+.maintain-post{
+    place-items: initial;
 }
 .grow-faster{
     background-color: #7551d9;
     grid-column: 3 / 5;
     grid-row: 8 / 12;
     width: 100%;
+    padding: 0;
 }
 .followers-growth{
     display: flex;
-    align-items: center;
     height: 100%;
-    margin: 0.5rem;
+    margin: 0;
     color: white;
+    place-items: initial;
+    margin-left: 0;
+    padding: 0%;
 }
-.grow-followers >img{
-    width:50%;
-    height: auto;
-    object-fit: cover;
+.followers-growth >img{
+    width:40%;
+    height: 80%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    align-items: start;
+    place-items: initial;
 }
-.grow-followers>h1>span{
-    color: white;
+.followers-growth h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    width: 300px;
+    margin-top: 3rem;
+}
+.grow-faster{
+    place-items: initial;
+    margin-left: 1rem;
 }
 .write-post{
     height: 100%;
@@ -230,9 +285,9 @@ body {
     flex-direction: column;
 }
 
-    .create-post >h1, .write-post >h1, .manage-account >h1, .maintain-post >h1, .faster-word>h1, .schedule-post >h1, .grow-followers >h1{
+    /* .create-post >h1, .write-post >h1, .manage-account >h1, .maintain-post >h1, .faster-word>h1, .schedule-post >h1, .grow-followers >h1{
         font-size: 1.5rem;
-    }
+    } */
 
     .schedule-post >p {
         font-size: 0.7rem;
